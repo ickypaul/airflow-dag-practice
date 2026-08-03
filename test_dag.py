@@ -24,8 +24,8 @@ with DAG(
         task_id="wait_for_file",
         bucket="my-data-bucket",
         object="sales/sales.csv",
-        timeout=300,
-        poke_interval=30,
+        timeout=600,
+        poke_interval=20,
     )
 
     # Load into BigQuery
